@@ -6,11 +6,11 @@ WhatsDesk Multi
 
 ## Tagline
 
-Multiple WhatsApp accounts. One focused Mac workspace.
+Multiple WhatsApp accounts. One focused desktop workspace.
 
 ## Short Description
 
-A free, source-available macOS desktop app for managing multiple WhatsApp Web sessions with local CRM notes, labels, and follow-up reminders.
+A free, source-available desktop app for managing multiple WhatsApp Web sessions with local CRM notes, labels, and follow-up reminders.
 
 ## Colors
 
@@ -36,6 +36,12 @@ macOS app icon:
 
 ```text
 build/icon.icns
+```
+
+Windows app icon:
+
+```text
+build/icon.ico
 ```
 
 The app icon uses only the approved center circular mark. It does not include the rounded macOS tile, app border, or bottom wordmark text.

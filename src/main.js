@@ -18,8 +18,9 @@ const crypto = require("crypto");
 const WHATSAPP_HOME = "https://web.whatsapp.com";
 const APP_PROTOCOL = "whatsdesk";
 const DEFAULT_COLORS = ["#25D366", "#34B7F1", "#7C3AED", "#F97316", "#EF4444", "#14B8A6"];
-const WHATSAPP_USER_AGENT =
-  "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36";
+const WHATSAPP_USER_AGENT = process.platform === "win32"
+  ? "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+  : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36";
 
 let mainWindow;
 let tray;

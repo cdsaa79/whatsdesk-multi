@@ -2,11 +2,11 @@
 
 ![WhatsDesk Multi app logo](docs/brand/whatsdesk-multi-logo.png)
 
-**One Mac app for all your WhatsApp accounts.**
+**One desktop app for all your WhatsApp accounts.**
 
 WhatsDesk Multi helps you manage multiple WhatsApp and WhatsApp Business accounts from one focused desktop workspace, with lightweight CRM notes, labels, and follow-up reminders built around your chats.
 
-[Download DMG for macOS](https://github.com/cdsaa79/whatsdesk-multi/releases/download/v1.0.0/WhatsDesk.Multi-1.0.0-arm64.dmg) · [All releases](https://github.com/cdsaa79/whatsdesk-multi/releases/latest) · [Report an issue](https://github.com/cdsaa79/whatsdesk-multi/issues) · [Request a feature](https://github.com/cdsaa79/whatsdesk-multi/issues/new?template=feature_request.md)
+[Download for macOS](https://github.com/cdsaa79/whatsdesk-multi/releases/download/v1.0.0/WhatsDesk.Multi-1.0.0-arm64.dmg) · [Download for Windows](https://github.com/cdsaa79/whatsdesk-multi/releases/download/v1.0.0/WhatsDesk.Multi.Setup.1.0.0.exe) · [All releases](https://github.com/cdsaa79/whatsdesk-multi/releases/latest) · [Report an issue](https://github.com/cdsaa79/whatsdesk-multi/issues) · [Request a feature](https://github.com/cdsaa79/whatsdesk-multi/issues/new?template=feature_request.md)
 
 > Free to use for personal work and inside businesses. You may not sell, rebrand, paid-host, or charge others for WhatsDesk Multi itself. See [License](LICENSE).
 
@@ -45,6 +45,15 @@ Because the app is not notarized yet, macOS may show a security warning on first
 1. Open **System Settings**.
 2. Go to **Privacy & Security**.
 3. Click **Open Anyway** for WhatsDesk Multi.
+
+### Direct Windows Installer
+
+1. Download [WhatsDesk Multi Setup for Windows](https://github.com/cdsaa79/whatsdesk-multi/releases/download/v1.0.0/WhatsDesk.Multi.Setup.1.0.0.exe).
+2. Run the installer.
+3. Launch **WhatsDesk Multi** from the Start Menu or desktop shortcut.
+4. Add your first WhatsApp instance and scan the QR code.
+
+The Windows app uses the same isolated WhatsApp Web sessions, local CRM drawer, reminders, labels, and approved WhatsDesk Multi icon. Windows may show a SmartScreen warning because the app is not code-signed yet.
 
 ## What You Can Do With It
 
@@ -94,7 +103,7 @@ No spreadsheet. No separate CRM tab. No forgotten customer.
 
 WhatsDesk Multi is useful if you:
 
-- Use more than one WhatsApp account on Mac
+- Use more than one WhatsApp account on desktop
 - Run both personal WhatsApp and WhatsApp Business
 - Manage sales conversations on WhatsApp
 - Use WhatsApp for customer support
@@ -107,7 +116,7 @@ WhatsDesk Multi is useful if you:
 - **Multiple isolated WhatsApp Web sessions**  
   Add many WhatsApp accounts and switch between them quickly.
 
-- **Compact Mac desktop workspace**  
+- **Compact desktop workspace**  
   Keep all accounts in one app instead of many browser windows.
 
 - **Local CRM sidebar**  
@@ -123,7 +132,7 @@ WhatsDesk Multi is useful if you:
   Rename, reload, clear session, mute, and delete individual instances.
 
 - **Local-first privacy**  
-  CRM data stays on your Mac. The app does not intentionally store full message history, media files, attachments, passwords, or encryption keys.
+  CRM data stays on your computer. The app does not intentionally store full message history, media files, attachments, passwords, or encryption keys.
 
 ## What Makes It Different
 
@@ -151,7 +160,7 @@ If it saves you time:
 
 ## Current Status
 
-WhatsDesk Multi is an early macOS MVP.
+WhatsDesk Multi is an early desktop MVP.
 
 What works today:
 
@@ -163,6 +172,7 @@ What works today:
 - Follow-up reminders
 - Basic contact detection from visible WhatsApp Web context
 - macOS packaging as DMG and ZIP
+- Windows packaging as installer and ZIP
 
 What is still improving:
 
@@ -215,7 +225,7 @@ WhatsDesk Multi does not intentionally store:
 - WhatsApp passwords
 - WhatsApp encryption keys
 
-WhatsApp Web session cookies and login state are stored by Electron in the normal macOS app data directory so your linked devices can stay logged in.
+WhatsApp Web session cookies and login state are stored by Electron in the normal app data directory so your linked devices can stay logged in.
 
 ## Important Note About WhatsApp
 
@@ -229,7 +239,7 @@ Contact and business information detection is best-effort because WhatsApp Web c
 
 Requirements:
 
-- macOS
+- macOS, Windows, or Linux for development
 - Node.js 20+
 - npm
 
@@ -251,6 +261,12 @@ Build macOS package:
 npm run package:mac
 ```
 
+Build Windows package:
+
+```bash
+npm run package:win
+```
+
 Build outputs are created in:
 
 ```text
@@ -260,8 +276,8 @@ dist/
 ## Brand
 
 Name: **WhatsDesk Multi**  
-Tagline: **Multiple WhatsApp accounts. One focused Mac workspace.**  
-Short description: **A free-to-use macOS desktop app for managing multiple WhatsApp Web accounts with local CRM notes and follow-up reminders.**
+Tagline: **Multiple WhatsApp accounts. One focused desktop workspace.**  
+Short description: **A free-to-use desktop app for managing multiple WhatsApp Web accounts with local CRM notes and follow-up reminders.**
 
 Brand files live in:
 

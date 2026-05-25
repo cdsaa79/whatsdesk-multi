@@ -20,9 +20,9 @@ assignees: ""
 
 ## Environment
 
-- macOS version:
+- Operating system and version:
 - WhatsDesk Multi version:
-- Apple Silicon or Intel:
+- CPU architecture: Apple Silicon, Intel, or Windows x64
 
 ## Screenshots
 

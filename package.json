@@ -1,7 +1,7 @@
 {
   "name": "whatsdesk-multi",
   "version": "1.0.0",
-  "description": "Free-to-use macOS multi-account WhatsApp Web desktop workspace with local CRM notes.",
+  "description": "Free-to-use multi-account WhatsApp Web desktop workspace with local CRM notes.",
   "author": "Dake",
   "main": "src/main.js",
   "license": "SEE LICENSE IN LICENSE",
@@ -11,6 +11,7 @@
     "whatsapp-desktop",
     "whatsapp-business",
     "macos",
+    "windows",
     "electron",
     "crm",
     "multi-account",
@@ -22,7 +23,9 @@
   "scripts": {
     "start": "electron .",
     "check": "node --check src/main.js && node --check src/preload.js && node --check src/renderer.js",
-    "package:mac": "electron-builder --mac"
+    "package:mac": "electron-builder --mac",
+    "package:win": "electron-builder --win",
+    "package:all": "electron-builder --mac --win"
   },
   "devDependencies": {
     "electron": "^42.2.0",
@@ -38,6 +41,30 @@
         "dmg",
         "zip"
       ]
+    },
+    "win": {
+      "icon": "build/icon.ico",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "zip",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "WhatsDesk Multi"
     },
     "files": [
       "src/**/*",
