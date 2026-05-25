@@ -1,0 +1,46 @@
+{
+  "name": "whatsdesk-multi",
+  "version": "1.0.0",
+  "description": "Free-to-use macOS multi-account WhatsApp Web desktop workspace with local CRM notes.",
+  "author": "Dake",
+  "main": "src/main.js",
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "whatsapp",
+    "whatsapp-web",
+    "whatsapp-desktop",
+    "whatsapp-business",
+    "macos",
+    "electron",
+    "crm",
+    "multi-account",
+    "desktop-app",
+    "source-available",
+    "free-to-use",
+    "no-resale"
+  ],
+  "scripts": {
+    "start": "electron .",
+    "check": "node --check src/main.js && node --check src/preload.js && node --check src/renderer.js",
+    "package:mac": "electron-builder --mac"
+  },
+  "devDependencies": {
+    "electron": "^42.2.0",
+    "electron-builder": "^26.8.1"
+  },
+  "build": {
+    "appId": "co.dake.whatsdesk-multi",
+    "productName": "WhatsDesk Multi",
+    "mac": {
+      "category": "public.app-category.productivity",
+      "target": [
+        "dmg",
+        "zip"
+      ]
+    },
+    "files": [
+      "src/**/*",
+      "package.json"
+    ]
+  }
+}
