@@ -14,10 +14,10 @@ A free, source-available macOS desktop app for managing multiple WhatsApp Web se
 
 ## Colors
 
-- App icon tile light: `#FFFFFF`
-- App icon tile shadow: `#D7D7D7`
-- App icon center: `#202838`
-- App icon atom line: `#BFF7FF`
+- Logo circle bright: `#28D866`
+- Logo circle green: `#119742`
+- Logo circle dark: `#111827`
+- Logo orbit line: `#FFFFFF`
 - Product accent green: `#16A34A`
 - Product accent bright: `#22C55E`
 - Text: `#111827`
@@ -37,3 +37,5 @@ macOS app icon:
 ```text
 build/icon.icns
 ```
+
+The app icon uses only the approved center circular mark. It does not include the rounded macOS tile, app border, or bottom wordmark text.
