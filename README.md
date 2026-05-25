@@ -6,7 +6,7 @@
 
 WhatsDesk Multi helps you manage multiple WhatsApp and WhatsApp Business accounts from one focused desktop workspace, with lightweight CRM notes, labels, and follow-up reminders built around your chats.
 
-[Download for macOS](https://github.com/cdsaa79/whatsdesk-multi/releases/latest) · [Report an issue](https://github.com/cdsaa79/whatsdesk-multi/issues) · [Request a feature](https://github.com/cdsaa79/whatsdesk-multi/issues/new?template=feature_request.md)
+[Download DMG for macOS](https://github.com/cdsaa79/whatsdesk-multi/releases/download/v1.0.0/WhatsDesk.Multi-1.0.0-arm64.dmg) · [All releases](https://github.com/cdsaa79/whatsdesk-multi/releases/latest) · [Report an issue](https://github.com/cdsaa79/whatsdesk-multi/issues) · [Request a feature](https://github.com/cdsaa79/whatsdesk-multi/issues/new?template=feature_request.md)
 
 > Free to use for personal work and inside businesses. You may not sell, rebrand, paid-host, or charge others for WhatsDesk Multi itself. See [License](LICENSE).
 
@@ -35,11 +35,10 @@ It is for founders, sales teams, agencies, recruiters, event companies, support 
 
 ### Direct macOS Installer
 
-1. Go to [Releases](https://github.com/cdsaa79/whatsdesk-multi/releases/latest).
-2. Download the `.dmg` file.
-3. Open the DMG.
-4. Drag **WhatsDesk Multi** into **Applications**.
-5. Launch the app and add your first WhatsApp instance.
+1. Download [WhatsDesk Multi DMG for macOS](https://github.com/cdsaa79/whatsdesk-multi/releases/download/v1.0.0/WhatsDesk.Multi-1.0.0-arm64.dmg).
+2. Open the `.dmg` file.
+3. Drag **WhatsDesk Multi** into **Applications**.
+4. Launch the app and add your first WhatsApp instance.
 
 Because the app is not notarized yet, macOS may show a security warning on first launch. If that happens:
 
