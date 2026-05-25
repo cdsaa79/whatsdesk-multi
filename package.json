@@ -23,9 +23,9 @@
   "scripts": {
     "start": "electron .",
     "check": "node --check src/main.js && node --check src/preload.js && node --check src/renderer.js",
-    "package:mac": "electron-builder --mac",
-    "package:win": "electron-builder --win",
-    "package:all": "electron-builder --mac --win"
+    "package:mac": "electron-builder --mac --publish never",
+    "package:win": "electron-builder --win --publish never",
+    "package:all": "electron-builder --mac --win --publish never"
   },
   "devDependencies": {
     "electron": "^42.2.0",
