@@ -6,7 +6,7 @@
 
 WhatsDesk Multi helps you manage multiple WhatsApp and WhatsApp Business accounts from one focused desktop workspace, with lightweight CRM notes, labels, and follow-up reminders built around your chats.
 
-[Download for macOS](https://github.com/cdsaa79/whatsdesk-multi/releases/download/v1.0.0/WhatsDesk.Multi-1.0.0-arm64.dmg) · [Download for Windows](https://github.com/cdsaa79/whatsdesk-multi/releases/download/v1.0.0/WhatsDesk.Multi.Setup.1.0.0.exe) · [All releases](https://github.com/cdsaa79/whatsdesk-multi/releases/latest) · [Report an issue](https://github.com/cdsaa79/whatsdesk-multi/issues) · [Request a feature](https://github.com/cdsaa79/whatsdesk-multi/issues/new?template=feature_request.md)
+[Download for macOS](https://github.com/cdsaa79/whatsdesk-multi/releases/download/v1.0.1/WhatsDesk.Multi-1.0.1-arm64.dmg) · [Download for Windows](https://github.com/cdsaa79/whatsdesk-multi/releases/download/v1.0.1/WhatsDesk.Multi.Setup.1.0.1.exe) · [All releases](https://github.com/cdsaa79/whatsdesk-multi/releases/latest) · [Report an issue](https://github.com/cdsaa79/whatsdesk-multi/issues) · [Request a feature](https://github.com/cdsaa79/whatsdesk-multi/issues/new?template=feature_request.md)
 
 > Free to use for personal work and inside businesses. You may not sell, rebrand, paid-host, or charge others for WhatsDesk Multi itself. See [License](LICENSE).
 
@@ -35,7 +35,7 @@ It is for founders, sales teams, agencies, recruiters, event companies, support 
 
 ### Direct macOS Installer
 
-1. Download [WhatsDesk Multi DMG for macOS](https://github.com/cdsaa79/whatsdesk-multi/releases/download/v1.0.0/WhatsDesk.Multi-1.0.0-arm64.dmg).
+1. Download [WhatsDesk Multi DMG for macOS](https://github.com/cdsaa79/whatsdesk-multi/releases/download/v1.0.1/WhatsDesk.Multi-1.0.1-arm64.dmg).
 2. Open the `.dmg` file.
 3. Drag **WhatsDesk Multi** into **Applications**.
 4. Launch the app and add your first WhatsApp instance.
@@ -48,7 +48,7 @@ Because the app is not notarized yet, macOS may show a security warning on first
 
 ### Direct Windows Installer
 
-1. Download [WhatsDesk Multi Setup for Windows](https://github.com/cdsaa79/whatsdesk-multi/releases/download/v1.0.0/WhatsDesk.Multi.Setup.1.0.0.exe).
+1. Download [WhatsDesk Multi Setup for Windows](https://github.com/cdsaa79/whatsdesk-multi/releases/download/v1.0.1/WhatsDesk.Multi.Setup.1.0.1.exe).
 2. Run the installer.
 3. Launch **WhatsDesk Multi** from the Start Menu or desktop shortcut.
 4. Add your first WhatsApp instance and scan the QR code.
@@ -131,6 +131,9 @@ WhatsDesk Multi is useful if you:
 - **Session controls**  
   Rename, reload, clear session, mute, and delete individual instances.
 
+- **WhatsApp Web calling support**  
+  Allows WhatsApp Web microphone and camera permissions for voice and video calls when WhatsApp enables calling for the current account/browser session.
+
 - **Local-first privacy**  
   CRM data stays on your computer. The app does not intentionally store full message history, media files, attachments, passwords, or encryption keys.
 
@@ -170,6 +173,7 @@ What works today:
 - Link routing
 - Local CRM notes and labels
 - Follow-up reminders
+- WhatsApp Web voice/video call permission support
 - Basic contact detection from visible WhatsApp Web context
 - macOS packaging as DMG and ZIP
 - Windows packaging as installer and ZIP

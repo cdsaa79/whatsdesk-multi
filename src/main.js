@@ -47,6 +47,7 @@ let state = {
 const views = new Map();
 const webContentsToInstance = new Map();
 const lastUnread = new Map();
+const configuredMediaSessions = new Set();
 let crmState = {
   contacts: [],
   labels: [],
@@ -57,6 +58,7 @@ let crmState = {
 };
 
 protocol.registerSchemesAsPrivileged([{ scheme: APP_PROTOCOL, privileges: { standard: true, secure: true } }]);
+app.commandLine.appendSwitch("autoplay-policy", "no-user-gesture-required");
 app.userAgentFallback = WHATSAPP_USER_AGENT;
 
 function nowIso() {
@@ -381,8 +383,40 @@ function toWhatsAppWebSendUrl(payload) {
   return url.toString();
 }
 
+function isTrustedWhatsAppOrigin(url) {
+  try {
+    const parsed = new URL(url || "");
+    return parsed.protocol === "https:" && parsed.hostname === "web.whatsapp.com";
+  } catch {
+    return false;
+  }
+}
+
+function configureWhatsAppMediaPermissions(partition) {
+  if (configuredMediaSessions.has(partition)) return;
+  configuredMediaSessions.add(partition);
+  const partitionSession = session.fromPartition(partition);
+  const mediaPermissions = new Set(["media", "audioCapture", "videoCapture"]);
+
+  partitionSession.setPermissionRequestHandler((webContents, permission, callback, details = {}) => {
+    const allowed = mediaPermissions.has(permission) && isTrustedWhatsAppOrigin(details.requestingUrl || webContents.getURL());
+    callback(Boolean(allowed));
+  });
+
+  partitionSession.setPermissionCheckHandler((_webContents, permission, requestingOrigin) => {
+    return mediaPermissions.has(permission) && isTrustedWhatsAppOrigin(requestingOrigin);
+  });
+
+  if (typeof partitionSession.setDevicePermissionHandler === "function") {
+    partitionSession.setDevicePermissionHandler((details = {}) => {
+      return ["media", "audioinput", "videoinput"].includes(details.deviceType) && isTrustedWhatsAppOrigin(details.origin);
+    });
+  }
+}
+
 function createWhatsAppView(instance) {
   if (views.has(instance.id)) return views.get(instance.id);
+  configureWhatsAppMediaPermissions(instance.partition);
   const view = new BrowserView({
     webPreferences: {
       partition: instance.partition,

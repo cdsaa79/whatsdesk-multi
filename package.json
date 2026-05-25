@@ -1,6 +1,6 @@
 {
   "name": "whatsdesk-multi",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Free-to-use multi-account WhatsApp Web desktop workspace with local CRM notes.",
   "author": "Dake",
   "main": "src/main.js",
@@ -37,6 +37,10 @@
     "mac": {
       "category": "public.app-category.productivity",
       "icon": "build/icon.icns",
+      "extendInfo": {
+        "NSMicrophoneUsageDescription": "WhatsDesk Multi needs microphone access to support WhatsApp Web voice calls.",
+        "NSCameraUsageDescription": "WhatsDesk Multi needs camera access to support WhatsApp Web video calls."
+      },
       "target": [
         "dmg",
         "zip"
