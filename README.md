@@ -1,85 +1,222 @@
 # WhatsDesk Multi
 
-**WhatsDesk Multi is a free, source-available macOS desktop app for managing multiple WhatsApp Web sessions in one clean workspace.** It is built for people who run separate WhatsApp accounts for sales, support, operations, personal work, or client communication and want a focused desktop experience with lightweight CRM notes.
-
-> License: BSD 3-Clause with Commons Clause. You can use WhatsDesk Multi personally or inside a business, study it, modify it, and share it. You may not sell it, rebrand it for paid distribution, offer it as a paid hosted service, or charge others for access/support where the app is the substantial value.
-
 ![WhatsDesk Multi app logo](docs/brand/whatsdesk-multi-logo.svg)
 
-## Why WhatsDesk Multi?
+**One Mac app for all your WhatsApp accounts.**
 
-WhatsApp Web is useful, but switching between multiple accounts in browser profiles is messy. WhatsDesk Multi gives every account its own isolated desktop session, then adds a simple CRM layer for labels, notes, follow-ups, and reminders.
+WhatsDesk Multi helps you manage multiple WhatsApp and WhatsApp Business accounts from one focused desktop workspace, with lightweight CRM notes, labels, and follow-up reminders built around your chats.
 
-Search-friendly summary:
+[Download for macOS](https://github.com/cdsaa79/whatsdesk-multi/releases/latest) · [Report an issue](https://github.com/cdsaa79/whatsdesk-multi/issues) · [Request a feature](https://github.com/cdsaa79/whatsdesk-multi/issues/new?template=feature_request.md)
 
-- Multiple WhatsApp accounts on Mac
-- Multi-session WhatsApp Web desktop manager
-- WhatsApp CRM for macOS
-- Separate WhatsApp Web profiles in one app
-- WhatsApp Business and personal account workspace
-- Local-first WhatsApp notes, labels, and follow-up reminders
+> Free to use for personal work and inside businesses. You may not sell, rebrand, paid-host, or charge others for WhatsDesk Multi itself. See [License](LICENSE).
 
-## Features
+## Why This Exists
 
-- **Multiple isolated WhatsApp Web instances**  
-  Create separate sessions for Sales, Support, Personal, Operations, or any other WhatsApp account. Each instance uses its own persistent Electron partition.
+WhatsApp is no longer just a personal messaging app.
 
-- **One-window desktop workspace**  
-  Switch accounts from a compact sidebar instead of juggling browser profiles, tabs, or separate Chrome windows.
+Today, many people run more than one WhatsApp identity:
 
-- **Lightweight CRM drawer**  
-  Add private notes, labels, owner, stage/status, custom fields, and follow-up reminders linked to the active chat.
+- Personal WhatsApp
+- Business WhatsApp
+- Sales number
+- Support number
+- Team or operations number
+- Client-specific number
+- Country-specific number
+- Side-business number
+
+The normal workflow is painful. You end up switching browser profiles, juggling Chrome tabs, scanning QR codes again, missing messages, and losing context between chats.
+
+**WhatsDesk Multi gives you one calm place to manage all of it.**
+
+It is for founders, sales teams, agencies, recruiters, event companies, support teams, consultants, operators, and anyone whose work happens across multiple WhatsApp accounts.
+
+## Download and Install
+
+### Direct macOS Installer
+
+1. Go to [Releases](https://github.com/cdsaa79/whatsdesk-multi/releases/latest).
+2. Download the `.dmg` file.
+3. Open the DMG.
+4. Drag **WhatsDesk Multi** into **Applications**.
+5. Launch the app and add your first WhatsApp instance.
+
+Because the app is not notarized yet, macOS may show a security warning on first launch. If that happens:
+
+1. Open **System Settings**.
+2. Go to **Privacy & Security**.
+3. Click **Open Anyway** for WhatsDesk Multi.
+
+## What You Can Do With It
+
+### Manage Multiple WhatsApp Accounts
+
+Create separate workspaces for each number:
+
+- Sales
+- Support
+- Personal
+- Operations
+- UAE number
+- India number
+- Client account
+- WhatsApp Business account
+
+Each account stays isolated, so you do not have to keep logging in and out.
+
+### Stop Losing Follow-Ups
+
+WhatsApp chats move fast. Important leads get buried.
+
+WhatsDesk Multi adds a small CRM drawer where you can:
+
+- Add private notes
+- Add labels like `Hot Lead`, `Customer`, `Supplier`, `Payment Pending`
+- Set lead status
+- Save next action
+- Create follow-up reminders
+- Keep customer context beside the chat
+
+### Use WhatsApp Like a Work Inbox
+
+Instead of “just chats,” you get a simple workflow:
+
+```text
+New WhatsApp message
+→ Open the right account
+→ Add note or label
+→ Set follow-up
+→ Continue the conversation
+```
+
+No spreadsheet. No separate CRM tab. No forgotten customer.
+
+## Who It Is For
+
+WhatsDesk Multi is useful if you:
+
+- Use more than one WhatsApp account on Mac
+- Run both personal WhatsApp and WhatsApp Business
+- Manage sales conversations on WhatsApp
+- Use WhatsApp for customer support
+- Need reminders for follow-ups
+- Work with many suppliers, leads, or clients
+- Want a cleaner alternative to browser profile switching
+
+## Key Features
+
+- **Multiple isolated WhatsApp Web sessions**  
+  Add many WhatsApp accounts and switch between them quickly.
+
+- **Compact Mac desktop workspace**  
+  Keep all accounts in one app instead of many browser windows.
+
+- **Local CRM sidebar**  
+  Notes, labels, stages, owners, custom fields, and follow-ups beside the active chat.
 
 - **Follow-up reminders**  
-  Create pending follow-ups and receive native macOS notifications when they are due.
+  Create reminders so important WhatsApp conversations do not disappear.
 
 - **WhatsApp link router**  
-  Open `wa.me`, `api.whatsapp.com`, `web.whatsapp.com`, `whatsapp://`, and `whatsdesk://` links with the instance you choose.
+  Choose which account should open a `wa.me`, `api.whatsapp.com`, `web.whatsapp.com`, `whatsapp://`, or `whatsdesk://` link.
 
-- **Free for real business use**  
-  Use it for your own company, team, sales workflow, support desk, or operations. The restriction is on reselling or monetizing WhatsDesk Multi itself.
+- **Session controls**  
+  Rename, reload, clear session, mute, and delete individual instances.
 
-- **Local-first storage**  
-  App metadata and CRM records are stored locally on your Mac. The app does not store full message history, attachments, or WhatsApp credentials.
+- **Local-first privacy**  
+  CRM data stays on your Mac. The app does not intentionally store full message history, media files, attachments, passwords, or encryption keys.
 
-- **Per-instance controls**  
-  Rename, reload, clear session, mute, and delete individual WhatsApp instances without affecting the others.
+## What Makes It Different
+
+Most tools either:
+
+- force you into a heavy CRM,
+- support only official WhatsApp Business API numbers,
+- or make you use browser profiles and tabs.
+
+WhatsDesk Multi is different because it focuses on the everyday reality:
+
+**many people already have multiple WhatsApp accounts, and they need one simple tool to manage all communication without changing how they use WhatsApp.**
+
+## Built for Growth, Kept Free
+
+The goal is to make WhatsDesk Multi useful for thousands of people who rely on WhatsApp every day.
+
+If it saves you time:
+
+- Star the repo
+- Share it with another WhatsApp-heavy user
+- Open issues for bugs
+- Suggest improvements
+- Contribute UI, packaging, CRM, or macOS polish
+
+## Current Status
+
+WhatsDesk Multi is an early macOS MVP.
+
+What works today:
+
+- Multiple WhatsApp Web instances
+- Separate sessions per instance
+- QR login per account
+- Link routing
+- Local CRM notes and labels
+- Follow-up reminders
+- Basic contact detection from visible WhatsApp Web context
+- macOS packaging as DMG and ZIP
+
+What is still improving:
+
+- App signing and notarization
+- Contact detection for some WhatsApp Business screens
+- Search across CRM notes and contacts
+- Export/import
+- Better release automation
+- Better screenshots and onboarding
 
 ## Screenshots
 
-Screenshots are intentionally not committed yet because real WhatsApp chats may contain private information. Before publishing, add redacted screenshots under:
+Screenshots will be added after redacting private WhatsApp conversations and phone numbers.
 
-```text
-docs/screenshots/
-```
+Planned screenshots:
 
-Recommended GitHub images:
+- Main multi-account workspace
+- QR login flow
+- CRM drawer
+- Follow-up reminders
+- Focus mode with collapsed panels
 
-- Main workspace with two instances
-- QR login screen
-- CRM details drawer
-- Follow-up tab
-- Collapsed drawer/focus mode
+## Privacy
 
-## How It Works
+WhatsDesk Multi stores local app and CRM metadata, such as:
 
-WhatsDesk Multi is an Electron app that embeds WhatsApp Web in isolated `BrowserView` sessions. Each instance gets a separate persistent partition:
+- Instance names and colors
+- Muted state
+- Local CRM contacts
+- Notes
+- Labels
+- Follow-ups
+- Custom fields
 
-```text
-persist:wa-{instanceId}
-```
+WhatsDesk Multi does not intentionally store:
 
-The CRM panel uses best-effort visible UI detection from the active WhatsApp Web chat. It does not access WhatsApp private APIs, encryption internals, hidden storage, or full message history.
+- Full WhatsApp message history
+- Attachments
+- Media files
+- WhatsApp passwords
+- WhatsApp encryption keys
 
-## Important Limitations
+WhatsApp Web session cookies and login state are stored by Electron in the normal macOS app data directory so your linked devices can stay logged in.
+
+## Important Note About WhatsApp
 
 WhatsDesk Multi is not an official WhatsApp or Meta product.
 
-WhatsApp does not provide a public API for building a full native clone of the WhatsApp desktop client for personal accounts. This project uses WhatsApp Web inside isolated desktop sessions. Contact detection is best-effort because WhatsApp Web can change its DOM at any time.
+It uses WhatsApp Web in isolated desktop sessions. It does not use hidden WhatsApp APIs, bypass encryption, or access WhatsApp private internals.
 
-For official business messaging integrations, use the WhatsApp Business Platform / Cloud API. That is a different product direction from this multi-account WhatsApp Web manager.
+Contact and business information detection is best-effort because WhatsApp Web can change its interface at any time.
 
-## Install for Development
+## Developer Setup
 
 Requirements:
 
@@ -92,107 +229,44 @@ npm install
 npm start
 ```
 
-## Verify
+Check the app:
 
 ```bash
 npm run check
 npm audit --omit=dev
 ```
 
-## Build macOS App
+Build macOS package:
 
 ```bash
 npm run package:mac
 ```
 
-Build outputs are created under:
+Build outputs are created in:
 
 ```text
 dist/
 ```
 
-Do not commit `dist/`, `node_modules/`, local app data, or private screenshots.
-
-## Data and Privacy
-
-WhatsDesk Multi stores:
-
-- App instance metadata
-- Instance names, colors, mute settings, and active instance
-- Local CRM contacts generated from visible chat context
-- Notes, labels, follow-ups, custom fields, and activity entries
-
-WhatsDesk Multi does not intentionally store:
-
-- Full WhatsApp message history
-- Attachments
-- Media files
-- WhatsApp passwords
-- WhatsApp encryption keys
-
-Electron and WhatsApp Web store session cookies and login state in the normal app user-data directory so linked devices can remain logged in.
-
 ## Brand
 
 Name: **WhatsDesk Multi**  
-Short description: **A multi-account WhatsApp Web desktop workspace for macOS with local CRM notes.**  
-Tagline: **Multiple WhatsApp accounts. One focused Mac workspace.**
+Tagline: **Multiple WhatsApp accounts. One focused Mac workspace.**  
+Short description: **A free-to-use macOS desktop app for managing multiple WhatsApp Web accounts with local CRM notes and follow-up reminders.**
 
-Logo files live in:
+Brand files live in:
 
 ```text
 docs/brand/
 ```
 
-## GitHub Topics
-
-Use these topics when publishing the repository:
-
-```text
-whatsapp
-whatsapp-web
-whatsapp-desktop
-whatsapp-business
-macos
-electron
-crm
-productivity
-multi-account
-desktop-app
-source-available
-free-to-use
-no-resale
-```
-
-## Roadmap
-
-- Better redacted screenshot set
-- Signed and notarized macOS releases
-- Improved contact detection for WhatsApp Business profiles
-- Search for CRM notes and contacts
-- Export/import local CRM records
-- Optional SQLite storage backend
-- Better keyboard shortcuts
-- Theme support
-- Contributor-friendly issue templates
-
-## Contributing
-
-Contributions are welcome. Please read [CONTRIBUTING.md](CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
-
-Good first issues:
-
-- Improve macOS UI polish
-- Add tests around link parsing
-- Improve CRM detection fallbacks
-- Add screenshot redaction helpers
-- Improve accessibility labels and keyboard navigation
-
 ## License
 
 WhatsDesk Multi is licensed under [BSD 3-Clause with Commons Clause](LICENSE).
 
-This means normal personal and business use is allowed, but selling the app, rebranding it as a paid product, paid hosting, or charging for services where WhatsDesk Multi is the substantial value is not allowed without separate written permission.
+You may use it personally or inside your business. You may study, modify, and share the code.
+
+You may not sell WhatsDesk Multi, rebrand it as a paid product, offer it as a paid hosted service, or charge others for access/support where WhatsDesk Multi is the substantial value.
 
 ## Disclaimer
 
