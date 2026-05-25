@@ -12,6 +12,7 @@ let crmRenderTimer;
 const app = document.getElementById("app");
 
 const icons = {
+  atomLogo: '<svg viewBox="0 0 64 64" aria-hidden="true"><rect x="3" y="3" width="58" height="58" rx="15" fill="url(#wdm-tile)"/><circle cx="32" cy="32" r="20" fill="url(#wdm-green)"/><g stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none"><ellipse cx="32" cy="32" rx="18" ry="6.5" transform="rotate(26 32 32)"/><ellipse cx="32" cy="32" rx="7" ry="19" transform="rotate(-12 32 32)"/></g><text x="32" y="39" text-anchor="middle" fill="#fff" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="18" font-weight="900">W</text><circle cx="32" cy="15" r="5.2" fill="#fff"/><text x="32" y="19" text-anchor="middle" fill="#15803d" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="7" font-weight="900">W</text><circle cx="16" cy="42" r="5.2" fill="#fff"/><text x="16" y="46" text-anchor="middle" fill="#15803d" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="7" font-weight="900">W</text><circle cx="48" cy="42" r="5.2" fill="#fff"/><text x="48" y="46" text-anchor="middle" fill="#15803d" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="7" font-weight="900">W</text><defs><linearGradient id="wdm-tile" x1="10" y1="3" x2="58" y2="61" gradientUnits="userSpaceOnUse"><stop stop-color="#fff"/><stop offset="1" stop-color="#d6d6d6"/></linearGradient><linearGradient id="wdm-green" x1="26" y1="13" x2="39" y2="52" gradientUnits="userSpaceOnUse"><stop stop-color="#22c55e"/><stop offset="1" stop-color="#101820"/></linearGradient></defs></svg>',
   chevronLeft: '<svg viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg>',
   chevronRight: '<svg viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>',
   message: '<svg viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/><path d="M8 9h8M8 13h5"/></svg>',
@@ -60,7 +61,7 @@ function render() {
   app.innerHTML = `
     <main class="app-shell ${drawerCollapsed ? "drawer-collapsed" : ""} ${crmCollapsed ? "crm-collapsed" : ""}">
       <aside class="rail">
-        <div class="rail-logo">W</div>
+        <div class="rail-logo" title="WhatsDesk Multi">${icon("atomLogo")}</div>
         <button class="rail-icon" id="toggle-drawer-rail" title="${drawerCollapsed ? "Expand instances drawer" : "Collapse instances drawer"}">${drawerCollapsed ? icon("chevronRight") : icon("chevronLeft")}</button>
         <button class="rail-icon active" title="${unreadTotal ? `Unread chats across all instances: ${unreadTotal}` : "Chats"}">${icon("message")}${unreadTotal ? `<span class="rail-badge">${unreadTotal}</span>` : ""}</button>
         <button class="rail-icon" title="CRM contacts">${icon("users")}</button>

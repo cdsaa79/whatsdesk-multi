@@ -1,6 +1,6 @@
 # WhatsDesk Multi
 
-![WhatsDesk Multi app logo](docs/brand/whatsdesk-multi-logo.svg)
+![WhatsDesk Multi app logo](docs/brand/whatsdesk-multi-logo.png)
 
 **One Mac app for all your WhatsApp accounts.**
 
@@ -175,15 +175,25 @@ What is still improving:
 
 ## Screenshots
 
-Screenshots will be added after redacting private WhatsApp conversations and phone numbers.
+All screenshots below use fictional sample data. No real chats, phone numbers, customer names, QR codes, or WhatsApp account data are shown.
 
-Planned screenshots:
+### Multi-Account Workspace
 
-- Main multi-account workspace
-- QR login flow
-- CRM drawer
-- Follow-up reminders
-- Focus mode with collapsed panels
+Manage multiple WhatsApp accounts, switch between isolated sessions, and keep CRM context beside the active chat.
+
+![WhatsDesk Multi main workspace](docs/screenshots/01-main-workspace.svg)
+
+### Follow-Up CRM
+
+Turn fast-moving WhatsApp conversations into a simple sales/support workflow with reminders and private notes.
+
+![WhatsDesk Multi follow-up CRM](docs/screenshots/02-follow-up-crm.svg)
+
+### Collapsed Focus Mode
+
+Collapse the instance drawer or CRM drawer when you need more space for conversation.
+
+![WhatsDesk Multi collapsed focus mode](docs/screenshots/03-collapsed-focus-mode.svg)
 
 ## Privacy
 

@@ -18,3 +18,7 @@ private/
 
 # Generated analysis output
 graphify-out/
+
+# Generated icon intermediates
+build/icon.iconset/
+build/*.png

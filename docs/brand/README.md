@@ -14,9 +14,12 @@ A free, source-available macOS desktop app for managing multiple WhatsApp Web se
 
 ## Colors
 
-- Green: `#16A34A`
-- Green dark: `#0F8B3E`
-- Green bright: `#22C55E`
+- App icon tile light: `#FFFFFF`
+- App icon tile shadow: `#D7D7D7`
+- App icon center: `#202838`
+- App icon atom line: `#BFF7FF`
+- Product accent green: `#16A34A`
+- Product accent bright: `#22C55E`
 - Text: `#111827`
 - Muted text: `#6B7280`
 - Background: `#F6F8F7`
@@ -26,5 +29,11 @@ A free, source-available macOS desktop app for managing multiple WhatsApp Web se
 Primary logo:
 
 ```text
-docs/brand/whatsdesk-multi-logo.svg
+docs/brand/whatsdesk-multi-logo.png
+```
+
+macOS app icon:
+
+```text
+build/icon.icns
 ```
